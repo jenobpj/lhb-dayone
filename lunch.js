@@ -14,7 +14,24 @@
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
-  console.log("I don't know what to do!");
+  if(hungry){
+    if(availableTime<20){
+      console.log('we can pic up something and eat in the lab')
+    }
+    else if(availableTime >=20 && availableTime <=30){
+      console.log('Try a place nearby')
+    }
+    else{
+      console.log("ohh god i dont have much time to spare")
+    }
+    
+  }
+  else{
+    console.log("G0!! get back to work")
+  }
+
+
+
 }
 
 
